@@ -1,0 +1,96 @@
+.hero-section {
+    height: 100vh;
+    background-image: url('../assets/images/background-garage.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(25, 118, 210, 0.85), rgba(25, 118, 210, 0.85));
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+    padding-top: 4rem;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-color: #1a73e8;
+    color: white;
+    border: 2px solid #1a73e8;
+}
+
+.btn-primary:hover {
+    background-color: #1557b0;
+    border-color: #1557b0;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-outline:hover {
+    background-color: white;
+    color: #1a73e8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+} 

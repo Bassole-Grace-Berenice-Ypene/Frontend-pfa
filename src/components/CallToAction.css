@@ -1,0 +1,56 @@
+.call-to-action {
+    background-color: #2563eb;
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.cta-content p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: white;
+    color: #2563eb;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cta-section {
+        padding: 3rem 1rem;
+    }
+
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+
+    .cta-content p {
+        font-size: 1rem;
+    }
+} 

@@ -1,0 +1,93 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 0.75rem 0;
+    height: 60px;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-center {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.navbar-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logo {
+    text-decoration: none;
+    color: #0066FF;
+    font-size: 1.4rem;
+    font-weight: 600;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+.nav-link:hover {
+    color: #0066FF;
+}
+
+.connexion-btn {
+    background-color: #0066FF;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+}
+
+.connexion-btn:hover {
+    background-color: #0052cc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-center {
+        display: none;
+    }
+    
+    .navbar-container {
+        padding: 0 1rem;
+    }
+} 
